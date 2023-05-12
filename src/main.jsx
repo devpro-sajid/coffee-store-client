@@ -8,20 +8,27 @@ import {
 } from "react-router-dom";
 import AddCoffee from './Components/AddCoffee.jsx';
 import UpdateCoffee from './Components/UpdateCoffee.jsx';
+import Home from './Components/Home.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    children:[
+      { path: "/",
+      element: <Home></Home>},
+      {
+        path: "/addCoffee",
+        element: <AddCoffee></AddCoffee>,
+      },
+      {
+        path: "/updateCoffee/:id",
+        element: <UpdateCoffee></UpdateCoffee>,
+        loader:({params})=> fetch(`https://coffee-store-server-sooty.vercel.app/coffee/${params.id}`)
+      },
+    ]
   },
-  {
-    path: "/addCoffee",
-    element: <AddCoffee></AddCoffee>,
-  },
-  {
-    path: "/updateCoffee",
-    element: <UpdateCoffee></UpdateCoffee>,
-  },
+  
 ]);
 
 

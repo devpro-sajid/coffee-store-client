@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.font-rancho{
+  font-family: 'Rancho', cursive;
+}
+.coffee-bg{
+    background-image: url(https://i.ibb.co/cNzbb7g/11-3.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-bg{
+  background-image: url(https://i.ibb.co/q7kvPY4/Rectangle-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-bg{
+  background-image: url(https://i.ibb.co/x2mJQzP/Rectangle-2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-top{
+  background-image: url(https://i.ibb.co/Syz2NZW/Rectangle-18.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-bottom{
+  background-image: url(https://i.ibb.co/qB0vT4H/Rectangle-17.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
