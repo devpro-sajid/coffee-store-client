@@ -16,7 +16,7 @@ const UpdateCoffee = () => {
         const photo = form.photo.value;
         const coffe={name,quantity,supplier,taste,category,details,photo};
         console.log(coffee);
-        fetch(`https://coffee-store-server-sooty.vercel.app/${coffee._id}`, {
+        fetch(`https://coffee-store-server-sooty.vercel.app/updateCoffee/${coffee._id}`, {
                 method:'PUT',
                 headers:{
                   'content-type':"application/json"
